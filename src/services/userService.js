@@ -15,9 +15,12 @@ function initializeApp() {
 
 async function getUser(id) {
   const response = await userRepository.getUser(id);
+  console.log(response.firstname);  
+  console.log(response.lastname);
   if (response === "User not found!" || response === undefined) {
     return { status: httpStatus.NOT_FOUND };
   } else {
+    console.log(response);
     return { response: response, status: httpStatus.OK };
   }
 }

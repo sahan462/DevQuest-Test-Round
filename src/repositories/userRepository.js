@@ -12,6 +12,8 @@ async function getUser(id) {
         `
         SELECT
           ut.id,
+          ut.firstname,
+          ut.lastname,
           ut.email,
           ut.gender,
           ut.image_url,
@@ -37,12 +39,15 @@ async function getUser(id) {
 
         const user = {
           id: rows[0].id,
+          firstname: rows[0].firstname,
+          lastname: rows[0].lastname,
           email: rows[0].email,
           gender: rows[0].gender,
           image_url: rows[0].image_url,
           hobbies: [],
           skills: [],
         };
+
 
         rows.forEach((row) => {
           hobbyExist = false;
