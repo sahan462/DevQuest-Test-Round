@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="3" failures="1" errors="0" time="3.121">
-    <testsuite name="tests/challenge0.test.js" timestamp="2024-01-04T10:40:34.500Z" hostname="LAPTOP-OMBJIULC" tests="3" failures="1" errors="0" skipped="0" time="1.66">
-        <testcase classname="tests/challenge0.test.js" name="Pre authentication tasks &gt; Challenge 0.a - User not found do not expose too much information" time="0.393">
+<testsuites name="vitest tests" tests="3" failures="0" errors="0" time="2.851">
+    <testsuite name="tests/challenge0.test.js" timestamp="2024-01-04T11:06:28.303Z" hostname="LAPTOP-OMBJIULC" tests="3" failures="0" errors="0" skipped="0" time="1.666">
+        <testcase classname="tests/challenge0.test.js" name="Pre authentication tasks &gt; Challenge 0.a - User not found do not expose too much information" time="0.385">
         </testcase>
-        <testcase classname="tests/challenge0.test.js" name="Pre authentication tasks &gt; Challenge 0.b - Wrong password do not expose too much information" time="0.42">
+        <testcase classname="tests/challenge0.test.js" name="Pre authentication tasks &gt; Challenge 0.b - Wrong password do not expose too much information" time="0.43">
         </testcase>
-        <testcase classname="tests/challenge0.test.js" name="Post authentication tasks &gt; Challenge 0.c - Show user&apos;s firstname and lastname in welcome message" time="0.367">
-            <failure message="expected { id: 1, …(5) } to have property &quot;firstname&quot;" type="AssertionError">
-AssertionError: expected { id: 1, …(5) } to have property &quot;firstname&quot;
- ❯ tests/challenge0.test.js:72:26
-            </failure>
+        <testcase classname="tests/challenge0.test.js" name="Post authentication tasks &gt; Challenge 0.c - Show user&apos;s firstname and lastname in welcome message" time="0.365">
         </testcase>
     </testsuite>
 </testsuites>

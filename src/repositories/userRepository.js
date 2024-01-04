@@ -11,6 +11,8 @@ async function getUser(id) {
       .raw(
         `
         SELECT
+          ut.firstname,
+          ut.lastname,
           ut.id,
           ut.email,
           ut.gender,
@@ -37,6 +39,8 @@ async function getUser(id) {
 
         const user = {
           id: rows[0].id,
+          firstname: rows[0].firstname,
+          lastname: rows[0].lastname,
           email: rows[0].email,
           gender: rows[0].gender,
           image_url: rows[0].image_url,
