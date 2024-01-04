@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="3" failures="0" errors="0" time="9.219">
+    <testsuite name="tests/_sanity.test.js" timestamp="2024-01-04T10:05:30.251Z" hostname="DESKTOP-QC0EJRU" tests="3" failures="0" errors="0" skipped="0" time="3.747">
+        <testcase classname="tests/_sanity.test.js" name="Pre authentication tasks &gt; Sanity Test - Login page works" time="0.94">
+        </testcase>
+        <testcase classname="tests/_sanity.test.js" name="Pre authentication tasks &gt; Sanity Test - New user registration works" time="0.855">
+        </testcase>
+        <testcase classname="tests/_sanity.test.js" name="Pre authentication tasks &gt; Sanity Test - Database reset for each test" time="0.935">
+        </testcase>
+    </testsuite>
+</testsuites>
