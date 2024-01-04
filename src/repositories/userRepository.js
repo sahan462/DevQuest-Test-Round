@@ -11,6 +11,8 @@ async function getUser(id) {
       .raw(
         `
         SELECT
+          ut.firstname,
+          ut.lastname,
           ut.id,
           ut.firstname,
           ut.lastname,

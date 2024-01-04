@@ -21,9 +21,13 @@ router.post("/login", async (req, res) => {
   const response = await authService.login(data);
 
   if (response == HttpStatus.FORBIDDEN) {
-    res.status(HttpStatus.FORBIDDEN).json({ message: "User Not Found" });
+    res
+      .status(HttpStatus.FORBIDDEN)
+      .json({ message: "User authentication failed" });
   } else if (response == HttpStatus.NOT_FOUND) {
-    res.status(HttpStatus.NOT_FOUND).json({ message: "Password Mismatch" });
+    res
+      .status(HttpStatus.NOT_FOUND)
+      .json({ message: "User authentication failed" });
   } else {
     res
       .status(HttpStatus.OK)
